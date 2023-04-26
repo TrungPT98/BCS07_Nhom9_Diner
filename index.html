@@ -30,13 +30,44 @@
 
 </head>
 
-<body>
+<body id="myBody">
     <header>
         <!-- place navbar here -->
+        <nav class="navbar pt-4 pb-2">
+            <div class="container">
+                <div class="header_left">
+                    <a class="navbar-brand header_logo text-white fw-bold fs-1" href="#">Diner</a>
+                </div>
+                <div class="header_right d-flex justify-content-between gap-2 align-items-center">
+                    <div class="diner_search">
+                        <input class="form-control ps-3 py-2 pe-5" type="search" placeholder="Search here..">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div id="switchButton" title="Click to switch theme">
+                        <i class="fa-regular fa-moon p-2 fs-3 text-white"></i>
+                        <i class="fa-regular fa-sun p-1 fs-3 text-white"></i>
+                    </div>
+                    <div class="text-center">
+                        <i class="fa-solid fa-bars p-2 fs-2 text-white"></i>
+                    </div>
+                </div>
+                <!-- <div class="overplay"></div> -->
+            </div>
+        </nav>
     </header>
     <main>
         <!-- Carousel  -->
-        <section class="cyber_carousel"></section>
+        <section class="cyber_carousel">
+            <div class="carousel_bg">
+                <div class="container d-flex align-items-center">
+                    <div class="carousel_content text-white">
+                        <h1 class="mb-4 fs-1 fw-bold">The Only Thing We <br> Love More Than Food <br> Is You!</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit. <br> Ea ipsum sed consequuntur illum facere.</p>
+                        <a href="#" class="btn mt-4 me-2 text-white btn-white px-5 py-3">Read More <i class="fa-solid fa-chevron-right ms-2"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- About Us  -->
         <section class="cyber_about"></section>
@@ -69,7 +100,9 @@
     <footer>
         <!-- place footer here -->
         <!-- Footer main  -->
-        <section class="footer_main"></section>
+        <section class="footer_main">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </section>
 
         <!-- Copyright -->
         <section class="footer_copyright"></section>
@@ -83,6 +116,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
+
+    <!-- Light - Dark Theme  -->
+    <script>
+        document.getElementById("switchButton").onclick = function () {
+
+            document.getElementById("myBody").classList.toggle("dark");
+        };
+    </script>
 </body>
 
 </html>

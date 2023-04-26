@@ -7,3 +7,80 @@ body {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.5;
 }
+
+/* Header  */
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav .header_right .diner_search {
+    position: relative;
+}
+nav .header_right .diner_search i {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+nav .header_right .fa-moon {
+    transform: rotate(-25deg);
+}
+
+/* Light theme */
+#myBody {
+    background-color: white;
+  }
+
+  #switchButton .fa-sun {
+    display: none;
+  }
+  #switchButton .fa-moon {
+    display: block;
+  }
+  
+  /* Dark Theme*/
+  .dark#myBody {
+    background-color: black;
+  }
+
+  .dark #switchButton .fa-sun {
+    display: block;
+  }
+  
+  .dark #switchButton .fa-moon {
+    display: none;
+  }
+  .dark .diner_search input {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+  }
+
+/* Popup menu  */
+
+
+/* Carousel  */
+
+.carousel_bg {
+  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+  position: relative;
+}
+.carousel_content {
+  padding-top: 105px;
+  /* height: 80vh; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: translateY(20%);
+}
+.carousel_content .btn-white {
+  background: transparent;
+  border: 2px solid white;
+}
