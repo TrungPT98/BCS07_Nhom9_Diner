@@ -208,13 +208,13 @@ header .header__navbar .navbar > i:first-of-type {
 .contact__map .map__content .contact__map__item iframe{
     width: 100%;
     height: 100%;
-    padding: 0; 
-    border-width: 0px;
-    margin: 0px;
+    border-radius: 6px;
+    background: #f7f7f7;
+    padding: 10px;
 }
 /* CONTACT END */
 
-/* FOOTER */
+/* FOOTER BEGIN */
 footer {
     background-color: #000;
 }
@@ -333,6 +333,9 @@ footer .footer__desc p {
 footer .footer__desc p  span{
     color: var(--primary-color);
 }
+/* FOOTER END */
+
+
 /* back top top */
 .back__to__top {
     position: fixed;
