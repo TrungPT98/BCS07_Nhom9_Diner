@@ -21,6 +21,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Magnific Popup core CSS file -->
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./Js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./Js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <!-- Main css-->
     <link rel="stylesheet" href="./css/landing.css">
 </head>
@@ -516,25 +519,25 @@
                                     <img src="./../img/g1.jpg" alt="food" class="posts__img">
                                 </div>
                                 <div class="posts__item__desc">
-                                 <h3 class="title">
-                                    <a href="./../blog/page/page1.html">
-                                        Hello world!
-                                    </a>
-                                 </h3>
-                                 <div class="posts__desc__bottom">
-                                    <div class="posts__bottom__left">
-                                        <a href="./../blog/w3layout.html">
-                                            <img src="./../blog/blog__img/w3logo.jpeg" alt="w3-logo">
+                                    <h3 class="title">
+                                        <a href="./../blog/page/page1.html">
+                                            Hello world!
                                         </a>
-                                        <span class="ms-2">W3Layouts</span>
+                                    </h3>
+                                    <div class="posts__desc__bottom">
+                                        <div class="posts__bottom__left">
+                                            <a href="./../blog/w3layout.html">
+                                                <img src="./../blog/blog__img/w3logo.jpeg" alt="w3-logo">
+                                            </a>
+                                            <span class="ms-2">W3Layouts</span>
+                                        </div>
+                                        <div class="posts__bottom__right">
+                                            <a href="#">
+                                                Read More
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="posts__bottom__right">
-                                        <a href="#">
-                                            Read More
-                                            <i class="fa-solid fa-chevron-right"></i>
-                                        </a>
-                                    </div>
-                                 </div>
 
                                 </div>
                             </div>
@@ -545,25 +548,25 @@
                                     <img src="./../img/g2.jpg" alt="food" class="posts__img">
                                 </div>
                                 <div class="posts__item__desc">
-                                 <h3 class="title">
-                                    <a href="./../blog/page/page2.html">
-                                        The Best Cookie Recipes To Bake This Weekend              
-                                    </a>
-                                 </h3>
-                                 <div class="posts__desc__bottom">
-                                    <div class="posts__bottom__left">
-                                        <a href="./../blog/w3layout.html">
-                                            <img src="./../blog/blog__img/w3logo.jpeg" alt="w3-logo">
+                                    <h3 class="title">
+                                        <a href="./../blog/page/page2.html">
+                                            The Best Cookie Recipes To Bake This Weekend
                                         </a>
-                                        <span class="ms-2">W3Layouts</span>
+                                    </h3>
+                                    <div class="posts__desc__bottom">
+                                        <div class="posts__bottom__left">
+                                            <a href="./../blog/w3layout.html">
+                                                <img src="./../blog/blog__img/w3logo.jpeg" alt="w3-logo">
+                                            </a>
+                                            <span class="ms-2">W3Layouts</span>
+                                        </div>
+                                        <div class="posts__bottom__right">
+                                            <a href="#">
+                                                Read More
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="posts__bottom__right">
-                                        <a href="#">
-                                            Read More
-                                            <i class="fa-solid fa-chevron-right"></i>
-                                        </a>
-                                    </div>
-                                 </div>
 
                                 </div>
                             </div>
@@ -574,25 +577,25 @@
                                     <img src="./../img/g3.jpg" alt="food" class="posts__img">
                                 </div>
                                 <div class="posts__item__desc">
-                                 <h3 class="title">
-                                    <a href="./../blog/page/page3.html">
-                                        The Best Cookie Recipes To Bake This Weekend              
-                                    </a>
-                                 </h3>
-                                 <div class="posts__desc__bottom">
-                                    <div class="posts__bottom__left">
-                                        <a href="./../blog/w3layout.html">
-                                            <img src="./../blog/blog__img/w3logo.jpeg" alt="w3-logo">
+                                    <h3 class="title">
+                                        <a href="./../blog/page/page3.html">
+                                            The Best Cookie Recipes To Bake This Weekend
                                         </a>
-                                        <span class="ms-2">W3Layouts</span>
+                                    </h3>
+                                    <div class="posts__desc__bottom">
+                                        <div class="posts__bottom__left">
+                                            <a href="./../blog/w3layout.html">
+                                                <img src="./../blog/blog__img/w3logo.jpeg" alt="w3-logo">
+                                            </a>
+                                            <span class="ms-2">W3Layouts</span>
+                                        </div>
+                                        <div class="posts__bottom__right">
+                                            <a href="#">
+                                                Read More
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="posts__bottom__right">
-                                        <a href="#">
-                                            Read More
-                                            <i class="fa-solid fa-chevron-right"></i>
-                                        </a>
-                                    </div>
-                                 </div>
 
                                 </div>
                             </div>
@@ -604,7 +607,94 @@
 
 
         <!-- People -->
-        
+        <section class="people py-5">
+            <div class="people__desc text-center">
+                <p class="sub__title">
+                    Testimonials
+                </p>
+                <h3 class="title">
+                    What People Say
+                </h3>
+            </div>
+            <div class="people__content py-lg-5 py-md-3">
+                <div class="container owl-carousel owl-theme">
+                    <div class="people__item text-center">
+                        <a class="people__img__block">
+                            <img src="./../img/team1.jpg" alt="man" class="img__people">
+                        </a>
+                        <div class="people__icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <blockquote>
+                            <q>OMG! I cannot believe. It's Awesome</q>
+                        </blockquote>
+                        <p class="sub__title mb-4">
+                            My new site is so much faster and easier to work with than my old site. They are here to
+                            help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                            Pellen tesque libero ut justo, ultrices in ligula.
+                        </p>
+                        <h3>Johnson william</h3>
+                        <span>Customer</span>
+                    </div>
+                    <div class="people__item text-center">
+                        <a class="people__img__block">
+                            <img src="./../img/team2.jpg" alt="man" class="img__people">
+                        </a>
+                        <div class="people__icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <blockquote>
+                            <q>Simply the best. Better than all the rest.</q>
+                        </blockquote>
+                        <p class="sub__title mb-4">
+                            My new site is so much faster and easier to work with than my old site. They are here to
+                            help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                            Pellen tesque libero ut justo, ultrices in ligula.
+                        </p>
+                        <h3>Alexander sakura</h3>
+                        <span>Customer</span>
+                    </div>
+                    <div class="people__item text-center">
+                        <a class="people__img__block">
+                            <img src="./../img/team3.jpg" alt="man" class="img__people">
+                        </a>
+                        <div class="people__icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <blockquote>
+                            <q>OMG! I cannot believe. It's Awesome</q>
+                        </blockquote>
+                        <p class="sub__title mb-4">
+                            My new site is so much faster and easier to work with than my old site. They are here to
+                            help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                            Pellen tesque libero ut justo, ultrices in ligula.
+                        </p>
+                        <h3>John Wilson</h3>
+                        <span>Customer</span>
+                    </div>
+                    <div class="people__item text-center">
+                        <a class="people__img__block">
+                            <img src="./../img/team2.jpg" alt="man" class="img__people">
+                        </a>
+                        <div class="people__icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <blockquote>
+                            <q>Simply the best. Better than all the rest.</q>
+                        </blockquote>
+                        <p class="sub__title mb-4">
+                            My new site is so much faster and easier to work with than my old site. They are here to
+                            help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                            Pellen tesque libero ut justo, ultrices in ligula.
+                        </p>
+                        <h3>Alexander sakura</h3>
+                        <span>Customer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
     <footer>
         <!-- place footer here -->
@@ -662,7 +752,29 @@
     });
   });
     </script> -->
-    
+
+
+    <!-- Owl carousel Js  -->
+    <script src="./Js/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="./Js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
