@@ -17,7 +17,7 @@ button.btn2{
     background: transparent;
     border: 2px solid #fff;
     color: #fff;
-    padding: 12px 45px;
+    padding: 12px 51px;
     font-size: 16px;
     line-height: 1.875;
     font-weight: 700;
@@ -91,6 +91,8 @@ header .header__navbar .navbar > i:first-of-type {
         z-index: 99;
         visibility: hidden;
         opacity: 0;
+        transform: scale(0.9);
+        transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
     }
     
     header .overlay .overlay__content {
@@ -128,7 +130,8 @@ header .header__navbar .navbar > i:first-of-type {
     header .overlay__open {
         visibility: visible;
         opacity: 1;
-        scale: (1);
+        transform: scale(1);
+        transition: transform 0.4s, opacity 0.4s;
     }
 
 
@@ -136,11 +139,12 @@ header .header__navbar .navbar > i:first-of-type {
 .banner {
     background-image:linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
     url(./../../img/banner1.jpg);
-    height: 100vh;
+    height: 700px;
     background-attachment: fixed;
     background-size: cover;
     display: flex;
     align-items: center;
+    background-position: initial;
 }
 .banner .banner__content {
     z-index: 1;
@@ -191,13 +195,19 @@ header .header__navbar .navbar > i:first-of-type {
 
 
 /* BOOK BEGIN */
+.book{
+    background-color: var(--primary-color);
 
+}
 /* book item left */
 .book .book__content .book__item__left {
     background-image: url(./../../img/banner3.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
+    /* height: 100%; */
+    min-height: 610px;
+    z-index: 1;
 }
 .book .book__content .book__item__left::before {
     content: "";
@@ -207,16 +217,13 @@ header .header__navbar .navbar > i:first-of-type {
     min-height: 100%;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 /* book item right */
 .book .book__content .book__item__right {
-    background-color: var(--primary-color);
-    padding: 16px 24px;
 }
 .book .book__content .book__item__right .item__right__desc {
-    padding: 60px 72px;
 }
 .book .book__content .book__item__right .item__right__desc .sub__title:first-of-type {
     color: var(--bg-color);
@@ -428,7 +435,6 @@ header .header__navbar .navbar > i:first-of-type {
     line-height: 1.55;
     color: rgba(22, 28, 45, 0.7);
     margin-bottom: 0;
-    width: 290px;
 }
 .features .features__content .features__item:hover {
     box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
@@ -498,7 +504,7 @@ header .header__navbar .navbar > i:first-of-type {
     transition: .5s ease;
     position: relative;
     z-index: 10;
-    top: -70px;
+    top: -170px;
 }
 .info__content .info__item i {
     background-color: var(--primary-color);
@@ -748,6 +754,7 @@ header .header__navbar .navbar > i:first-of-type {
     border-radius: 6px;
     outline: none;
     border: 1px solid transparent;
+    height: 58px;
 }
 .contact .contact__content .contact__item input:focus,
 .contact .contact__content .contact__item textarea:focus{
@@ -809,7 +816,7 @@ header .header__navbar .navbar > i:first-of-type {
 /* map item */
 .contact__map .map__content .contact__map__item iframe{
     width: 100%;
-    height: 100%;
+    height: 400px;
     border-radius: 6px;
     background: #f7f7f7;
     padding: 10px;
@@ -866,6 +873,9 @@ footer .footer__content .footer__subscribe h3
     font-weight: 700;
     color: #fff;
     margin-bottom: 30px;
+}
+.footer__categories {
+    margin-top: 0px;
 }
 footer .footer__content .footer__categories a {
     font-size: 17px;
@@ -965,4 +975,204 @@ footer .footer__desc p  span{
 .cd-top--is-visible {
     visibility: visible;
     opacity: 1;
-  }
+}
+/* BACK TO TOP END */
+
+  /* RESPONSIVE */
+@media screen and (max-width: 1190px)  {
+    /* header  */
+    /* banner */
+    .banner .banner__content .title {
+        font-size: 48px;
+        line-height: 1.20;
+    }
+}
+@media screen and (max-width: 1080px)  {
+    /* book */
+    .book .book__content .book__item__right .item__right__desc .title,
+    /* team */
+    .team .team__desc .title,
+    /* popular */
+    .popular .popular__desc .title,
+     /* posts */
+     .posts .posts__desc .title,
+       /* people */
+    .people .people__desc .title,
+       /* contact */
+    .contact .contact__desc .title,
+        /* map */
+    .contact__map .map__content .contact__map__desc > h3,
+        /* about us */
+    .about .about__content .about__item__left .title
+    {
+        font-size: 32px !important;
+        line-height: 1.25;
+    }
+    /* team */
+    .team .team__content .team__item__icon {
+        bottom: 127px;
+        left: 76px;
+    }
+    /* info */
+    .info .info__desc .title {
+        font-size: 40px;
+        line-height: 1.25;
+    }
+}
+@media screen and (max-width: 992px)  {
+    /* banner */
+    .banner .banner__content .title {
+        font-size: 44px;
+        line-height: 1.20;
+    }
+    /* book */
+    .book .book__content .book__item__left {
+        min-height: 200px;
+    }
+    /* team */
+    .team .team__content .team__item__icon {
+        left: 93px;
+    }
+    /* info content */
+    .info__content .info__item {
+        top: -40px;
+    }
+    .info__content .info__item .title {
+        font-size: 32px;
+    }
+    footer .footer__content .footer__dinner .footer__dinner__icon  {
+        text-align: center;
+    }
+    .info__content .info__item__last {
+        padding-bottom: 16px;
+    }
+    /* posts */
+    .posts .posts__content .posts__item .posts__item__desc .title a {
+        font-size: 20px;
+        line-height: 1.25;
+    }
+    /* team */
+    .book .book__content .book__item__right .book__best__content a {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 800px)  {
+    /* banner */
+    .banner .banner__content .title {
+        font-size: 40px;
+        line-height: 1.25;
+    }
+    /* info content */
+    .info__content .info__item__last {
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width: 750px)  {
+    /* team */
+    .team .team__content .team__item__icon{
+        left: 51px;
+        bottom: 95px;
+    }
+    .team .team__content .team__item a {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .team .team__content .team__item span {
+        font-size: 16px;
+    }
+    /* popular */
+    .popular .popular__content .popular__item .popular__item__desc{
+        bottom: 9px;
+        left: 32px;
+    }
+    .popular .popular__content .popular__item .popular__item__desc p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px)  {
+    /* header */
+    header .header__navbar .navbar form {
+        display: none!important;
+    }
+    /* about */
+    .about .about__content .about__item__left .title,
+    /* book */
+    .book .book__content .book__item__right .item__right__desc .title,
+    /* team */
+    .team .team__desc .title,
+    /* popular */
+    .popular .popular__desc .title
+    {
+        font-size: 30px !important;
+        line-height: 1.26;
+    }
+    .about .about__content .about__item__right,
+    /* book */
+    .book .book__content .book__item__right .item__right__desc .sub__title:first-of-type,
+    .book .book__content .book__item__right .item__right__desc .sub__title:last-of-type,
+    .book .book__content .book__item__right .book__best__content p {
+        font-size: 16px;
+        line-height: 1.625;
+    }
+}
+@media screen and (max-width: 510px)  { 
+    /* info content */
+    .info .info__desc .title {
+        font-size: 35px;
+    }
+    /* features */
+    .features .features__content .features__item .features__item__top .item__top__text span,
+    /* posts */
+    .posts .posts__desc .sub__title,
+    /* people */
+    .people .people__desc .sub__title,
+    /* contact */
+    .contact .contact__desc .sub__title:first-of-type,
+    .contact .contact__desc .sub__title:last-of-type,
+    /* map */
+    .contact__map .map__content .contact__map__desc > p
+    {
+        font-size: 16px;
+    }
+    .features .features__content .features__item .features__item__top .item__top__text a {
+        font-size: 20px;
+    }
+    .features .features__content .features__item .features__item__bottom .title {
+        font-size: 16px;
+    }
+    /* footer */
+    .footer__subscribe {
+        margin-top: 0px!important;
+    }
+    .footer__categories{
+        margin-top: 48px;
+    }
+    .footer__categories__link {
+        margin-top: 20px!important;
+    }
+
+    /* posts */
+    .posts .posts__desc .title,
+    /* contact */
+    .contact .contact__desc .title,
+    /* people */
+    .people .people__desc .title,
+    /* map */
+    .contact__map .map__content .contact__map__desc > h3
+    {
+        font-size: 30px;
+    }
+    .people .people__item {
+        margin-top: 40px;
+    }
+    .people .people__content .people__item blockquote q {
+        font-size: 22px;
+    }
+    .people .people__content .people__item .sub__title {
+        font-size: 16px;
+    }
+
+}
+
+
