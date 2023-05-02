@@ -79,12 +79,64 @@ header .header__navbar .navbar > i:first-of-type {
 }
 /* HEADER END */
 
+/* HEADER OVERLAY */
+    header .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(6 3 0 / 77%);
+        /* overflow-y: scroll; */
+        z-index: 99;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    header .overlay .overlay__content {
+        padding-top: 100px;
+    }
+    header .overlay .overlay__content li{
+        list-style: none;
+        padding: 10px 0;
+    }
+    header .overlay .overlay__content li a{
+        font-size: 20px;
+        text-transform: capitalize;
+        color: var(--bg-color);
+        transition: al .5s;
+    }
+    header .overlay .overlay__content li a:hover {
+        color: var(--primary-color);
+    }
+    /* overlay icon */
+    header .overlay .overlay__icon__close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        overflow: hidden;
+        border: none;
+        background: var(--primary-color);
+        color: var(--bg-color);
+        border-radius: 6px;
+        text-align: center;
+        line-height: 40px;
+        font-weight: 600;
+    }
+    header .overlay__open {
+        visibility: visible;
+        opacity: 1;
+        scale: (1);
+    }
+
+
 /* BANNER BEGIN */
 .banner {
-    background-image:linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)),
+    background-image:linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
     url(./../../img/banner1.jpg);
     height: 100vh;
-    background-position: center;
     background-attachment: fixed;
     background-size: cover;
     display: flex;
