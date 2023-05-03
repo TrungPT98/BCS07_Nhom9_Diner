@@ -138,8 +138,6 @@ header .header__navbar .navbar > i:first-of-type {
         transform: scale(1);
         transition: transform 0.4s, opacity 0.4s;
     }
-
-
 /* BANNER BEGIN */
 .banner {
     background-image:linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),

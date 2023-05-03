@@ -656,105 +656,68 @@ footer .footer__desc p  span{
   }
 
   /* RESPONSIVE */
-  @media screen and (max-width: 1199.98px) {
-     
-  }
-  @media screen and (max-width: 1199.98px) and (min-width: 990px){
-     /* posts item footer right */
-     .posts .posts__content .posts__item .posts__item__desc  .item__desc__footer .item__footer__right{
-      margin-left: 20%;
-  }
-  /* posts detail */
-  .posts__content .posts__item .posts__detail {
-      top: 178px;
-  }
-  }
-  @media screen and (max-width: 991.98px) {
-      /* header  */
-      header .container {
-          padding: 0 15px;
-      }
-      /* posts */
-      
-      /* posts item desc title */
-      .posts .posts__content .posts__item .posts__item__desc .title {
-          font-size: 20px;
-      }
-      .posts__content h2 {
-        font-size: 38px;
-      }
-      /* footer */
-      footer .footer__content .footer__archives h3,
-      footer .footer__content .footer__subscribe h3
-       {
-          
-          margin-bottom: 0;
-          margin-top: 30px;
-      }
-      footer .footer__content .footer__categories h3 {
-          margin-bottom: 0;
-      }
-      footer .footer__desc p {
-          text-align: center;
-      }
-      .footer__dinner__icon{
-          text-align: center;
-      }
-  }
-  @media screen and (max-width: 767.98px) {
-      /* posts */
-      .posts__content .posts__item .posts__detail {
-          top: 320px;
-      }
-      .posts .posts__content .posts__item .posts__item__desc .item__desc__footer .item__footer__right {
-          margin-left: 55%;
-      }
-  }
-  @media screen and (max-width: 575.98px) and (min-width: 500px) {
-      /* header */
-      header .header__navbar .navbar form input {
-          display: none;
-      }
-      header .header__content .header__navbar .navbar {
-          padding-right: 30px;
-      }
-      .posts__content .posts__item .posts__detail {
-          top: 289px;
-      }
-      .posts .posts__content .posts__item .posts__item__desc .item__desc__footer .item__footer__right {
-          margin-left: 50%;
-      }
-            /* posts item footer right */
-     .posts .posts__content .posts__item .posts__item__desc  .item__desc__footer .item__footer__right{
-      margin-left: 46%;
-      }
-      /* posts detail */
-      .posts__content .posts__item .posts__detail {
-      top: 265px;
-      }
-      /* footer */
-      footer .footer__content .footer__archives h3,
-      footer .footer__content .footer__subscribe h3
-       {
-          
-          margin-bottom: 0;
-          margin-top: 30px;
-      }
-      footer .footer__content .footer__categories h3 {
-          margin-bottom: 0;
-          margin-top: 20px;
-      }
-      footer .footer__desc p {
-          text-align: center;
-      }
-      footer .footer__content .footer__archives a {
-          margin-top: 0!important;
-      }
-      footer .footer__content .footer__subscribe p {
-          margin-top: 20px!important;
-      }
-  } 
+  @media screen and (max-width: 1193px)  {
+    /* header  */
+    /* banner */
+    .banner .banner__content .title {
+        font-size: 48px;
+        line-height: 1.20;
+    }
+    /* posts */
+    .posts__content .posts__item .posts__detail {
+        top: 170px;
+    }
+}
+@media screen and (max-width: 1080px)  {
+    /* posts */
+    .posts > .title {
+        font-size: 32px !important;
+        line-height: 1.25;
+    }
+    .posts .posts__content .posts__item .posts__item__desc .title {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+@media screen and (max-width: 992px)  {
+    /* footer */
+    .footer__dinner__icon {
+        text-align: center;
+    }
+    .posts__content .posts__item .posts__detail {
+        top: 193px;
+    }
+}
+@media screen and (max-width: 800px)  {
+}
+@media screen and (max-width: 750px)  {
+    /* posts */
+    .posts__content .posts__item .posts__detail{
+        top: 304px;
+    }
+}
 
+@media screen and (max-width: 600px)  {
+    .posts__content .posts__item .posts__detail{
+        top: 290px;
+    }
+}
+@media screen and (max-width: 510px)  { 
+     /* footer */
+    .footer__subscribe {
+        margin-top: 0px!important;
+    }
+    .footer__categories{
+        margin-top: 48px;
+    }
+    .footer__categories__link {
+        margin-top: 20px!important;
+    }
+    /* posts */
+    .posts__content .posts__item .posts__detail{
+        top: 274px;
+    }
+}
 
 
 
