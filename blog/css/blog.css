@@ -157,6 +157,51 @@ header .overlay__open {
 
 
 /* POSTS BEGIN */
+/* posts item layout */
+.posts .posts__item .posts__layout {
+    background-color: var(--bg-color);
+    border-radius: 6px;
+    border: 1px solid #eee;
+}
+.posts  .posts__item .posts__layout .posts__layout__item {
+    padding: 30px;
+}
+.posts  .posts__item .posts__layout .posts__layout__item .item__layout__text {
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.posts  .posts__item .posts__layout .posts__layout__item h3 a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #232121;
+    display: inline-block;
+    margin-bottom: 10px;
+}   
+.posts  .posts__item .posts__layout .posts__layout__item p {
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 1.55;
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(22, 28, 45, 0.7);
+    font-weight: 400;
+}
+.posts  .posts__item .posts__layout .posts__layout__item .item__layout__icon {
+    margin-top: 24px;
+}
+.posts  .posts__item .posts__layout .posts__layout__item .item__layout__icon a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    color: #69696980;
+    transition: all .5s;
+}
+.posts  .posts__item .posts__layout .posts__layout__item .item__layout__icon a:hover { 
+    color: var(--primary-color);
+}
 .posts {
     padding: 90px 0;
     background-color: #f7f7f7;
@@ -674,7 +719,11 @@ footer .footer__desc p  span{
     }
 }
 @media screen and (max-width: 510px)  { 
-     /* footer */
+    /* header */
+    header .header__navbar .navbar form input {
+        display: none;
+    }
+    /* footer */
     .footer__subscribe {
         margin-top: 0px!important;
     }
@@ -686,6 +735,9 @@ footer .footer__desc p  span{
     }
     /* posts */
     .posts__content .posts__item .posts__detail{
-        top: 274px;
+        top: 274px; 
+    }
+    .posts  .posts__item .posts__layout .posts__layout__item img {
+        width: 100%;
     }
 }

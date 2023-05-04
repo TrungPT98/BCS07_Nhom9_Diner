@@ -20,14 +20,14 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ======= Blog CSS ========  -->
-    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="./css/blog.css">
 </head>
 
 <body >
     <!-- HEADER -->
     <header>
         <!-- place navbar here -->
-        <div class="container p-0">
+        <div class="container">
             <div class="header__content ">
                 <div class="header__logo">
                     <a href="./index.html">
@@ -46,7 +46,55 @@
 
                         <i class="fa-regular fa-moon"></i>
 
-                        <i class="fa-solid fa-bars"></i>
+                        <i id="open__Overlay"  class="fa-solid fa-bars"></i>
+                        <div id="overLay" class="overlay">
+                            <ul class="overlay__content text-center">
+                                <li>
+                                    <a href="#">
+                                        home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        about
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        blog posts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        404 page
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Elements
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        contact
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        landing page
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div id="closeOverlay" class="overlay__icon__close text-right">
+                                <i class="fa-solid fa-xmark text-white"></i>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -56,49 +104,54 @@
         
         <!-- BANNER -->
         <section class="banner">
-            <a class="banner__content">
+            <p class="banner__content">
                 home
-                <span class="text-white">  »  Author: </span>
-                <span class="text-white">W3Layouts</span>
-            </a>
+            </p>
         </section>
 
         <!-- POSTS -->
-        <section class="posts">
-            <!-- W3 content -->
-               <section class="w3layout__content container pt-4 pb-5">
-                <div class="row">
-                    <div class="col-12 w3__layout__item d-flex align-items-center">
-                        <a class="col-3 w3__layout__img">
-                            <img class="" src="./blog__img/w3logo-posts.jpeg" alt="w3-logo">
-                        </a>
-                        <div class="w3__layout__desc col-9 ps-4">
-                            <h3><a href="#">W3Layouts</a></h3>
-                            <p>We help developers, designers and website owner's create stunning websites. We have been building a huge collection of website templates for every business and industry needs. Simply select your favourite template, edit, download and launc</p>
-                            <div class="w3__layout__icon mt-4">
-                                <a href="https://twitter.com/">
-                                    <i class="fa-brands fa-twitter"></i>
+        <section class="posts py-md-5">  
+            <div class="container">
+                <div class="row posts__item my-5 px-2 px-md-0">
+                    <div class="col-12 posts__layout ">
+                        <div class="posts__layout__item row">
+                            <div class="col-md-3 col-12  item__layout__logo px-2">
+                                <a class="" href="#">
+                                    <img class="img-fluid" src="./blog__img/w3logo-posts.jpeg"
+                                        alt="w3-logo ">
                                 </a>
-                                <a href="https://www.facebook.com/">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.instagram.com/">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
+                            </div>
+                            <div class="item__layout__text col-md-9 col-12 ">
+                                <h3><a href="#">
+                                        W3Layouts
+                                    </a></h3>
+                                <p>We help developers, designers and website owner's create stunning
+                                    websites. We have been building a huge collection of website templates
+                                    for every business and industry needs. Simply select your favourite
+                                    template, edit, download and launc</p>
+                                <div class="item__layout__icon">
+                                    <a href="https://twitter.com/">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-               </section>
-            
-            <div class="container">
                 <div class="posts__content row">
-                    <div class="col-8 p-0">
+                    <div class="col-lg-8 col-md-12 p-sm-0">
                         <div class="row">
-                            <div class="col-6 mb-5">
+                            <div class="col-md-6 mb-5 ">
                                 <article class="posts__item">
                                     <a href="./page/page1.html" class="posts__img">
-                                        <img class="img-fluid" src="./blog__img/posts__img(1).jpg" alt="food">
+                                        <img class="" src="./blog__img/posts__img(1).jpg" alt="food">
                                         <div class="posts__detail">
                                             <span class="posts__detail__left">
                                                 Drinks
@@ -114,13 +167,13 @@
                                             Hello world!
                                         </a>
                                         <div class="item__desc__footer">
-                                            <a href="#" href="">
+                                            <a href="./w3layout.html" href="">
                                                 <img class="img-fluid" src="./blog__img/w3logo.jpeg" alt="w3__logo">
                                             </a>
-                                            <a href="#" class="item__footer__left">
+                                            <a href="./w3layout.html" class="item__footer__left">
                                                 W3Layouts
                                             </a>
-                                            <a href="#" class="item__footer__right">
+                                            <a href="./w3layout.html" class="item__footer__right">
                                                 Read More
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
@@ -128,10 +181,10 @@
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-6 mb-5">
+                            <div class="col-md-6 mb-5">
                                 <article class="posts__item">
                                     <a href="./page/page2.html" class="posts__img">
-                                        <img class="img-fluid" src="./blog__img/posts__img(2).jpg" alt="food">
+                                        <img class="" src="./blog__img/posts__img(2).jpg" alt="food">
                                         <div class="posts__detail">
                                             <span class="posts__detail__left">
                                                 Drinks
@@ -147,13 +200,13 @@
                                             The Best Cookie Recipes To Bake This Weekend
                                         </a>
                                         <div class="item__desc__footer">
-                                            <a href="#" href="">
+                                            <a href="./w3layout.html" href="">
                                                 <img class="img-fluid" src="./blog__img/w3logo.jpeg" alt="w3__logo">
                                             </a>
-                                            <a href="#" class="item__footer__left">
+                                            <a href="./w3layout.html" class="item__footer__left">
                                                 W3Layouts
                                             </a>
-                                            <a href="#" class="item__footer__right">
+                                            <a href="./w3layout.html" class="item__footer__right">
                                                 Read More
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
@@ -163,10 +216,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6 mb-5">
+                            <div class="col-md-6 mb-5">
                                 <article class="posts__item">
                                     <a href="./page/page3.html" class="posts__img">
-                                        <img class="img-fluid" src="./blog__img/posts__img(3).jpg" alt="food">
+                                        <img class="" src="./blog__img/posts__img(3).jpg" alt="food">
                                         <div class="posts__detail">
                                             <span class="posts__detail__left">
                                                 Drinks
@@ -182,13 +235,13 @@
                                             The Best Cookie Recipes To Bake This Weekend
                                         </a>
                                         <div class="item__desc__footer">
-                                            <a href="#" href="">
+                                            <a href="./w3layout.html" href="">
                                                 <img class="img-fluid" src="./blog__img/w3logo.jpeg" alt="w3__logo">
                                             </a>
-                                            <a href="#" class="item__footer__left">
+                                            <a href="./w3layout.html" class="item__footer__left">
                                                 W3Layouts
                                             </a>
-                                            <a href="#" class="item__footer__right">
+                                            <a href="./w3layout.html" class="item__footer__right">
                                                 Read More
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
@@ -196,10 +249,10 @@
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-6 mb-5">
+                            <div class="col-md-6 mb-5">
                                 <article class="posts__item">
                                     <a href="./page/page4.html" class="posts__img">
-                                        <img class="img-fluid" src="./blog__img/posts__img(4).jpg" alt="food">
+                                        <img class="" src="./blog__img/posts__img(4).jpg" alt="food">
                                         <div class="posts__detail">
                                             <span class="posts__detail__left">
                                                 Drinks
@@ -215,13 +268,13 @@
                                             The Best Cookie Recipes To Bake This Weekend
                                         </a>
                                         <div class="item__desc__footer">
-                                            <a href="#" href="">
+                                            <a href="./w3layout.html" href="">
                                                 <img class="img-fluid" src="./blog__img/w3logo.jpeg" alt="w3__logo">
                                             </a>
-                                            <a href="#" class="item__footer__left">
+                                            <a href="./w3layout.html" class="item__footer__left">
                                                 W3Layouts
                                             </a>
-                                            <a href="#" class="item__footer__right">
+                                            <a href="./w3layout.html" class="item__footer__right">
                                                 Read More
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
@@ -231,10 +284,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6 mb-5">
+                            <div class="col-md-6 mb-5">
                                 <article class="posts__item">
                                     <a href="./page/page5.html" class="posts__img">
-                                        <img class="img-fluid" src="./blog__img/posts__img(5).jpg" alt="food">
+                                        <img class="" src="./blog__img/posts__img(5).jpg" alt="food">
                                         <div class="posts__detail">
                                             <span class="posts__detail__left">
                                                 Drinks
@@ -250,13 +303,13 @@
                                             The Best Cookie Recipes To Bake This Weekend
                                         </a>
                                         <div class="item__desc__footer">
-                                            <a href="#" href="">
+                                            <a href="./w3layout.html" href="">
                                                 <img class="img-fluid" src="./blog__img/w3logo.jpeg" alt="w3__logo">
                                             </a>
-                                            <a href="#" class="item__footer__left">
+                                            <a href="./w3layout.html" class="item__footer__left">
                                                 W3Layouts
                                             </a>
-                                            <a href="#" class="item__footer__right">
+                                            <a href="./w3layout.html" class="item__footer__right">
                                                 Read More
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
@@ -264,7 +317,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-6 mb-5">
+                            <div class="col-md-6 mb-5">
                                 <article class="posts__item">
                                     <a href="./page/page6.html" class="posts__img">
                                         <img class="img-fluid" src="./blog__img/posts__img(6).jpg" alt="food">
@@ -283,13 +336,13 @@
                                             The Best Cookie Recipes To Bake This Weekend
                                         </a>
                                         <div class="item__desc__footer">
-                                            <a href="#" href="">
+                                            <a href="./w3layout.html" href="">
                                                 <img class="img-fluid" src="./blog__img/w3logo.jpeg" alt="w3__logo">
                                             </a>
-                                            <a href="#" class="item__footer__left">
+                                            <a href="./w3layout.html" class="item__footer__left">
                                                 W3Layouts
                                             </a>
-                                            <a href="#" class="item__footer__right">
+                                            <a href="./w3layout.html" class="item__footer__right">
                                                 Read More
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
@@ -304,17 +357,17 @@
                                     <a href="#">1</a>
                                 </li>
                                 <li>
-                                    <a href="#">2</a>
+                                    <a href="./blog2.html">2</a>
                                 </li>
                                 <li>
-                                    <a href="#">Next</a>
+                                    <a href="./blog2.html">Next</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4  posts__sidebar">
-                        <div class="row ps-3 posts__sidebar__content">
-                            <div class="col-12  posts__sidebar__input">
+                    <div class="col-lg-4 col-md-12 col-sm-12 mt-lg-0 mt-5 posts__sidebar">
+                        <div class="row px-3 posts__sidebar__content">
+                            <div class="col-12  posts__sidebar__input px-md-2">
                                 <div class="input-group flex-nowrap ">
                                     <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                                         aria-describedby="addon-wrapping">
@@ -324,55 +377,55 @@
                                 </div>
                             </div>
                             <!-- posts__sidebar__recent -->
-                            <div class="col-12 w-100">
+                            <div class="col-12 pe-md-0 px-md-0  ">
                                 <div class="posts__sidebar__recent">
                                     <h3>Recent Posts</h3>
                                     <ul class="sidebar__recent__list">
                                         <li class="mb-3">
-                                            <a href="#">Hello World!</a>
+                                            <a href="./page/page1.html">Hello World!</a>
                                         </li>
                                         <li class="mb-3">
-                                            <a class="list-s" href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                                            <a class="list-s" href="./page/page2.html">The Best Cookie Recipes To Bake This Weekend</a>
                                         </li>
                                         <li class="mb-3">
-                                            <a class="list-s" href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                                            <a class="list-s" href="./page/page3.html">The Best Cookie Recipes To Bake This Weekend</a>
                                         </li>
                                         <li class="mb-3">
-                                            <a class="list-s" href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                                            <a class="list-s" href="./page/page4.html">The Best Cookie Recipes To Bake This Weekend</a>
                                         </li>
                                         <li class="mb-3">
-                                            <a class="list-s" href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                                            <a class="list-s" href="./page/page5.html">The Best Cookie Recipes To Bake This Weekend</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
 
                             <!-- posts__sidebar__cmt -->
-                            <div class="col-12">
+                            <div class="col-12 pe-md-0 px-md-0 ">
                                 <div class="posts__sidebar__cmt">
                                     <h3>Recent Comments</h3>
                                     <div class="posts__cmt__link my-4">
-                                        <a href="#">
+                                        <a href="https://wordpress.org/">
                                             A WordPress Commenter
                                         </a>
                                         <span>on</span>
-                                        <a href="#">Hello world!</a>
+                                        <a href="./page/page1.html">Hello world!</a>
                                     </div>
                                     <div class="posts__cmt__link my-4">
-                                        <a href="#">
+                                        <a href="https://wordpress.org/">
                                             A WordPress Commenter
                                         </a>
                                         <span>on</span>
-                                        <a href="#">Hello world!</a>
+                                        <a href="./page/page1.html">Hello world!</a>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- posts__sidebar__archives -->
-                            <div class="col-12">
+                            <div class="col-12 pe-md-0 px-md-0 ">
                                 <div class="posts__sidebar__archives">
                                     <h3>Archives</h3>
-                                    <a href="#">
+                                    <a href="./blog2.html">
                                         March 2021
                                     </a>
                                 </div>
@@ -380,7 +433,7 @@
 
 
                             <!-- posts__sidebar__categories -->
-                            <div class="col-12">
+                            <div class="col-12 pe-md-0 px-md-0 ">
                                 <div class="posts__sidebar__categories">
                                     <h3>Categoriess</h3>
                                     <a href="#">
@@ -392,7 +445,7 @@
                             </div>
 
                             <!-- posts__sidebar__meta -->
-                            <div class="col-12">
+                            <div class="col-12 pe-md-0 px-md-0 ">
                                 <div class="posts__sidebar__meta">
                                     <h3>Meta</h3>
                                     <a href="https://wp.w3layouts.com/diner/wp-login.php">
@@ -499,8 +552,8 @@
         </script>
 
     <!-- back to top js -->
-    <script src="./javascript/back-to-top-master/assets/js/util.js"></script>
-    <script src="./javascript/back-to-top-master/assets/js/back-to-top.js"></script>
+    <script src="./../javascript/back-to-top-master/assets/js/util.js"></script>
+    <script src="./../javascript/back-to-top-master/assets/js/back-to-top.js"></script>
 
         <script src="./blog.js"></script>
 </body>
