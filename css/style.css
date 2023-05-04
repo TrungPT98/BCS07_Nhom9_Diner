@@ -240,6 +240,10 @@ nav .header_right .fa-moon {
   background-color: #ff6600;
   color: white;
 }
+.dark#myBody .cyber_services .col-lg-4 .services_content {
+  background-color: transparent;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
 
 /* Home Page Cover  */
 .cyber_homepage {
@@ -322,6 +326,9 @@ nav .header_right .fa-moon {
   .cyber_number {
     margin-top: 0;
   }
+}
+.dark#myBody .cyber_number .number_content .number_count {
+  background-color: #232220;
 }
 
 /* Video  */
@@ -425,6 +432,14 @@ div#small-dialog iframe {
 }
 
 /* Blog Posts  */
+.dark#myBody .cyber_blog {
+  background-color: #282828;
+}
+.dark#myBody .cyber_blog .card .card-body a {
+  /* background-color: #282828; */
+  color: white !important;
+}
+
 .cyber_blog {
   background: #f7f7f7;
 }
@@ -451,8 +466,17 @@ div#small-dialog iframe {
   transition: all .5s;
 }
 .cyber_blog .card-body .card_foot a:hover {
-  color: #ff6600;
+  color: #ff6600 !important;
 }
+.dark#myBody .cyber_blog .card-body .card_foot a:last-child {
+  text-decoration: none;
+  color: white;
+  transition: all .5s;
+}
+.dark#myBody .cyber_blog .card-body .card_foot a:last-child:hover {
+  color: #ff6600 !important;
+}
+
 
 /* PEOPLE BEGIN */
 
@@ -526,6 +550,9 @@ div#small-dialog iframe {
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #ff6600;
 }
+.dark#myBody .people .people__content .people__item p, .dark#myBody .people .people__content .people__item span {
+  color: white;
+}
 /* PEOPLE END */
 
 /* Footer  */
@@ -554,6 +581,13 @@ div#small-dialog iframe {
   color: white;
   background-color: #ff6600;
 }
+.dark#myBody .footer_main .footer_top .footer_icon a {
+  background: #404040;
+}  
+.dark#myBody .footer_main .footer_top .footer_icon a:hover {
+  color: white;
+  background-color: #ff6600;
+}
 .footer_main .footer_top .col-lg-4 form button {
   background-color: #ff6600;
   color: white;
@@ -562,6 +596,10 @@ div#small-dialog iframe {
 .footer_main .footer_top .col-lg-4 form button:hover {
   opacity: 0.8;
 }
+.footer_main .footer_top .col-lg-4 form input:focus {
+  border: 1px solid #ff6600;
+}
+
 .footer_copyright {
   background-color: black;
   border-top: 1px solid rgb(255 255 255 / 5%);
@@ -581,27 +619,26 @@ div#small-dialog iframe {
   font-size: 17px;
 }
 
+
 /* back top top */
-.back__to__top {
+.backtotop {
   position: fixed;
   bottom: 55px;
   right: 20px;
   z-index: 20;
   font-size: 18px;
   border: none;
-  outline: none;
   cursor: pointer;
   color: #fff;
   width: 50px;
   height: 50px;
   background: #ff6600;
-  padding: 0;
   line-height: 50px;
   border-radius: 50%;
-  transition: all 0.3s;
   text-align: center;
   visibility: hidden;
   opacity: 0;
+  transition: all 0.3s;
 }
 
 .cd-top--is-visible {
