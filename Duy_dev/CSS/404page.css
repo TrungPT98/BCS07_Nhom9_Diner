@@ -37,7 +37,7 @@ header form i:last-child {
     right: -17px;
 }
 
-/* Tương lai tươi sáng */
+/* Light theme */
 #myBody {
     background-color: white;
 }
@@ -49,7 +49,7 @@ header form i:last-child {
     display: block;
 }
 
-/* Tương lai u tối */
+/* Dark Theme */
 .dark#myBody {
     background-color: #404040;
 }

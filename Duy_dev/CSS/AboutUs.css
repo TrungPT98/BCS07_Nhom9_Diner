@@ -129,8 +129,9 @@ header ol li a {
     padding-top: 3rem !important;
 }
 }
-.new_content  img {
+.new_content img {
     padding: 10px 20px 25px;
+    align-items: center;
 }
 .new_content h3 {
     font-weight: bold;
@@ -139,8 +140,12 @@ header ol li a {
 margin-bottom: 1.5rem !important;
 line-height: 1.8rem;
 }
-.new_content button :hover {
-    color: white
+.new_content .btn {
     background-color: #FF6600;
-    transition: all 0.5s;
+    width: 25%;
+    height: 50px;
+    opacity: 1;
+    border: 2px soild #e7e0e0;
 }
+
+
