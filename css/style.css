@@ -92,6 +92,13 @@ nav .header_right .fa-moon {
   right: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  .navbar .header_right .diner_search {
+    display: none;
+  }
+  
+}
+
 /* Carousel  */
 
 .carousel_bg {
@@ -367,13 +374,25 @@ nav .header_right .fa-moon {
   text-align: center;
   line-height: 78px;
   border-radius: 50%;
-  transition: all .3s;
   color: #ff6600;
   background: #fff;
   border: transparent;
   animation: ripple 1s linear infinite;
+  transition: all .3s;
 }
-
+.cyber_video .video_content .video_play_icon:hover {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 98px;
+  border-radius: 50%;
+  color: #fff;
+  background: #ff6600;
+  border: transparent;
+  animation: ripple 1s linear infinite;
+}
 #small-dialog {
   max-width: 750px;
   margin: 40px auto;
