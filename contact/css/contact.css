@@ -99,6 +99,12 @@ header {
     top: 40px;
     right: 40px;
   }
+  @media screen and (max-width: 600px) {
+    .navbar .header_right .diner_search {
+      display: none;
+    }
+    
+  }
 
 /* BANNER BEGIN */
 .banner {
@@ -429,6 +435,9 @@ header {
     .book .book__content .book__item__right .book__best__content a {
         font-size: 18px;
     }
+    .contact {
+        padding-top: 48px !important;
+    }
 }
 @media screen and (max-width: 800px)  {
     /* banner */
@@ -439,6 +448,9 @@ header {
     /* info content */
     .info__content .info__item__last {
         padding-bottom: 40px;
+    }
+    .contact {
+        padding-top: 48px;
     }
 }
 @media screen and (max-width: 750px)  {
@@ -461,6 +473,9 @@ header {
     }
     .popular .popular__content .popular__item .popular__item__desc p {
         font-size: 18px;
+    }
+    .contact {
+        padding-top: 48px;
     }
 }
 
